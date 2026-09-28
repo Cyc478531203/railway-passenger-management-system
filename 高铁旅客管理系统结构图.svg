@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1440" viewBox="0 0 760 1440">
+  <rect width="760" height="1440" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000"/>
+    </marker>
+    <style>
+      .title { font: 700 30px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill:#000; }
+      .text { font: 20px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill:#000; }
+      .small { font: 17px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill:#000; }
+      .box { fill:#fff; stroke:#000; stroke-width:2; }
+      .line { fill:none; stroke:#000; stroke-width:2; marker-end:url(#arrow); }
+    </style>
+  </defs>
+
+  <text x="380" y="55" text-anchor="middle" class="title">高铁列车旅客管理信息系统总体结构</text>
+
+  <rect x="255" y="90" width="250" height="64" rx="12" class="box"/>
+  <text x="380" y="130" text-anchor="middle" class="text">启动程序 main()</text>
+  <path d="M380 154 V194" class="line"/>
+
+  <rect x="230" y="195" width="300" height="72" rx="12" class="box"/>
+  <text x="380" y="225" text-anchor="middle" class="text">创建 TrainSystem 对象</text>
+  <text x="380" y="252" text-anchor="middle" class="small">初始化车厢、哈希索引和售票流水</text>
+  <path d="M380 267 V307" class="line"/>
+
+  <rect x="245" y="308" width="270" height="64" rx="12" class="box"/>
+  <text x="380" y="348" text-anchor="middle" class="text">显示终端可视化主菜单</text>
+  <path d="M380 372 V412" class="line"/>
+
+  <polygon points="380,413 510,475 380,537 250,475" class="box"/>
+  <text x="380" y="482" text-anchor="middle" class="text">选择系统功能</text>
+  <path d="M380 537 V577" class="line"/>
+
+  <rect x="170" y="578" width="420" height="330" rx="14" class="box"/>
+  <text x="380" y="614" text-anchor="middle" class="text" font-weight="bold">业务功能层</text>
+  <line x1="205" y1="632" x2="555" y2="632" stroke="#000" stroke-width="1.5"/>
+  <text x="220" y="672" class="text">1. 显示列车与全部区间余票</text>
+  <text x="220" y="710" class="text">2. 查询可售车厢和座位</text>
+  <text x="220" y="748" class="text">3. 售票并自主选择座位</text>
+  <text x="220" y="786" class="text">4. 办理退票并恢复座位</text>
+  <text x="220" y="824" class="text">5. 查询旅客及办理上下车</text>
+  <text x="220" y="862" class="text">6. 统计客流、售票数和收入</text>
+  <path d="M380 908 V948" class="line"/>
+
+  <rect x="190" y="949" width="380" height="64" rx="12" class="box"/>
+  <text x="380" y="989" text-anchor="middle" class="text">读写乘客、座位和售票数据</text>
+  <path d="M380 1013 V1053" class="line"/>
+
+  <rect x="115" y="1054" width="530" height="235" rx="14" class="box"/>
+  <text x="380" y="1090" text-anchor="middle" class="text" font-weight="bold">数据结构层</text>
+  <line x1="145" y1="1108" x2="615" y2="1108" stroke="#000" stroke-width="1.5"/>
+  <text x="150" y="1150" class="text">车厢动态数组 vector&lt;Carriage*&gt;</text>
+  <text x="150" y="1188" class="text">乘客跳表 PassengerSkipList</text>
+  <text x="150" y="1226" class="text">链式哈希表 PassengerHashIndex</text>
+  <text x="150" y="1264" class="text">售票流水链表 SalesLedger</text>
+  <path d="M380 1289 V1329" class="line"/>
+
+  <rect x="245" y="1330" width="270" height="64" rx="12" class="box"/>
+  <text x="380" y="1370" text-anchor="middle" class="text">返回主菜单或退出系统</text>
+</svg>
